@@ -1,0 +1,106 @@
+.contenu {
+    background-color: none;
+    padding: none;
+    border-radius: 10px;
+
+ }
+
+
+
+
+header{
+    padding: 100px;
+    height: auto;
+    background-image: url(./public/image/fond5.avif);
+
+
+}
+
+
+#Monbouton {
+    display: inline-block;
+    background-color: #0582CA;
+    border-radius: 30px;
+    border:none;
+    color: white;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 15px;
+    margin: 1px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+
+}
+button:hover {
+    background-color: #1B4965;
+}
+button:active  {
+    transform: scale(0.95);
+}
+
+h1 {
+
+    background-color: none;
+    color: #1B4965;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    top: 80px;
+    left: 100px;
+    font-size: 46px;
+
+}
+
+#logo {
+    border-radius: 30%;
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    top: 0px;
+    left:0px;
+
+
+    }
+
+
+
+body{
+    margin: 0;
+    height: 100vh;
+ }
+
+
+
+
+
+
+footer {
+
+    background-image: url(../code-projet/public/image/fond5.avif);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+/* ﻿
+Comme une envie de crever
+Juli976e T.
+julie_7 */
+
+.social-icons , li , a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+.pff{
+    width: 50px;
+    width: 50px;
+}

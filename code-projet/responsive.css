@@ -1,0 +1,33 @@
+@media all and (orientation: portrait){
+
+    body{
+        background-color: brown;
+    }
+
+    #carousel  {
+        width: 100%;
+        max-width: 150vw;
+        height: 30vh;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+    }
+    
+    
+    
+    .carousel-image  {
+        height: 50vh;
+        max-height: 150px;
+        position: absolute;
+        left: 50%;
+        border-radius: 7%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px px 1px;
+    
+    }
+    
+    
+    
+    
+    
+    }
