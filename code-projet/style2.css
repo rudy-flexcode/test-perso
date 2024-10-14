@@ -45,6 +45,7 @@ button:active  {
 h1 {
 
     background-color: none;
+<<<<<<< HEAD
     /* color: #1B4965; */
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,6 +53,12 @@ h1 {
     top: 80px;
     left: 100px;
     font-size: 80px;
+=======
+    color: #1B4965;
+    font-family: "Lexend Giga", sans-serif;
+    text-align: center;
+    font-size: 65px;
+>>>>>>> ae1e3b9750900a2911f87d3b67e4fd17229c0ff3
 
 }
 
