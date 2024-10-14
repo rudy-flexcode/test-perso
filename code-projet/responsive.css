@@ -1,4 +1,5 @@
-@media all and (orientation: portrait){
+
+@media screen and (min-width: 100px) {
 
     body{
         background-color: brown;
@@ -26,8 +27,7 @@
     
     }
     
+}
     
     
     
-    
-    }

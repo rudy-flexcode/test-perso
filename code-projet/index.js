@@ -14,16 +14,31 @@ class Carousel {
         this.img[3] = document.getElementById("carousel-image-3");
         this.img[4] = document.getElementById("carousel-image-4");
         this.img[5] = document.getElementById("carousel-image-5");
+
+        
+
+
+
        
 
         // Set animation key frames forward and backward
         this.animForward  = [ 'mv1to0', 'mv2to1', 'mv3to2', 'mv4to3', 'mv5to4'];
         this.animBackward = ['mv0to1', 'mv1to2', 'mv2to3', 'mv3to4', 'mv4to5' ];
+       
+        
+
+
 
         // Reset carousel 
         this.reset();
     }
 
+
+
+    
+
+    
+        
 
 
     // Set a new image (src) to image at given position (pos)
