@@ -3,6 +3,7 @@
     padding: 1rem;
     border-radius: 10px;
     display: flex;
+
     flex-direction: column;
     align-items: center;
 
@@ -17,6 +18,15 @@
 header{
     width: 100%;
     padding: 20px;
+    flex-direction: row-reverse;
+  
+    align-items:flex-start;
+ }
+
+header{
+ 
+    padding: 50px;
+
     height: auto;
     background-image: url('./public/image/mesh.png');
     background-size: cover;
@@ -32,19 +42,24 @@ header{
 
 
 #Monbouton {
-    display: flex;
-    flex-direction: column;
+     display: flex;
+   
+    
     color:rgb(34, 34, 128);
     opacity: 85%;
     border-radius: 30px;
     border:none;
     padding: 18px 20px;
+    
     text-align: center;
     font-size: 19px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ;
     font-family: "Lexend Giga", sans-serif;
-    position: relative; 
+    position:sticky; 
+
+    
+  
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -62,10 +77,12 @@ button:active  {
 
 h1 {
 
+
     background-color: none;
     color: #ffffff;
     font-family: "Lexend Giga", sans-serif;
     text-align: center;
+    
     font-size: 75px;
     animation: zoomOut 5s ease-in-out forwards;
     opacity:0,5;
@@ -120,7 +137,7 @@ body{
 footer {
 
     /* background-image: url(../code-projet/public/image/fond5.avif); */
-    background: linear-gradient(#fffafa, #9198e5);
+    background: linear-gradient(#3759f1, #b88aee,#e20686);
     font-family: "Lexend Giga", sans-serif;
     padding-bottom: 4px;
     text-align: center;
