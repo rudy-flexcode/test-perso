@@ -14,10 +14,10 @@ main {
     display: grid;
     flex-direction: column;
     justify-content: space-between;
-    background-color: aliceblue;
+    background-color: rgb(254, 251, 255);
     align-items: center;
     margin:20px;
-    box-shadow: 0px 1px 9px rgba(21, 11, 75, 0.7);
+    box-shadow: 0px 1px 19px rgba(83, 36, 88, 0.7);
     border-radius: 2%;
     
     @media screen and (min-width: 992px) {
