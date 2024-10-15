@@ -1,38 +1,71 @@
 .contenu {
     background-color: none;
-    padding: none;
+    padding: 1rem;
     border-radius: 10px;
     display: flex;
+
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 1rem;
+
+    }
+
+    
+ }
+
+header{
+    width: 100%;
+    padding: 20px;
+    flex-direction: row-reverse;
+  
+    align-items:flex-start;
  }
 
 header{
  
-    padding: 20px;
+    padding: 50px;
+
     height: auto;
     background-image: url('./public/image/mesh.png');
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1em;
+      
+    }
  }
 
 
 #Monbouton {
-    display: flex;
-    flex-direction: column;
+     display: flex;
+   
+    
     color:rgb(34, 34, 128);
     opacity: 85%;
     border-radius: 30px;
     border:none;
     padding: 18px 20px;
+    
     text-align: center;
     font-size: 19px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ;
     font-family: "Lexend Giga", sans-serif;
-    position: relative; 
+    position:sticky; 
 
+    
+  
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        padding-right: 0%;
+
+    }
 }
 
 button:hover {
@@ -44,13 +77,23 @@ button:active  {
 
 h1 {
 
+
     background-color: none;
     color: #ffffff;
     font-family: "Lexend Giga", sans-serif;
     text-align: center;
+    
     font-size: 75px;
     animation: zoomOut 5s ease-in-out forwards;
     opacity:0,5;
+
+    @media screen and (min-width: 768px) {
+        width: 5em;
+        font-size: 1.8em;
+        display: flex;
+        flex-direction: row;
+        
+    }
 }  
     @keyframes zoomOut {
         from {
@@ -73,6 +116,9 @@ h1 {
     top: 0px;
     left:0px;
 
+      @media screen and (min-width: 768px) {
+
+      }
 
     }
 
@@ -91,11 +137,15 @@ body{
 footer {
 
     /* background-image: url(../code-projet/public/image/fond5.avif); */
-    background: linear-gradient(#fffafa, #9198e5);
+    background: linear-gradient(#3759f1, #b88aee,#e20686);
     font-family: "Lexend Giga", sans-serif;
     padding-bottom: 4px;
     text-align: center;
 
+
+       @media screen and (min-width: 768px) {
+
+       }
 }
 /* ﻿
 Comme une envie de crever
@@ -107,10 +157,20 @@ julie_7 */
     justify-content: center;
     align-items: center;
     margin: 12px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+
+
+    }
 }
 .pff{
    
     width: 50px;
     border-radius:10% ;
+    @media screen and (min-width: 768px){
+
+    }
 
 }
