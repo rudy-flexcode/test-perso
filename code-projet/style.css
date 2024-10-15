@@ -82,6 +82,9 @@ p {
 #contactForm {
   display:none;
 }
+#submit {
+  background-color: black;
+}
 
 .containerform {
 
