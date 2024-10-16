@@ -3,69 +3,72 @@
     padding: 1rem;
     border-radius: 10px;
     display: flex;
-
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
 
-    @media screen and (min-width: 768px) {
-        padding: 0 1rem;
-
-    }
-
+    @media screen and (min-width: 992px) {
+        display: flex;
+        flex-direction: center;
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-right: 3px;
+      }
     
  }
 
 header{
     width: 100%;
     padding: 20px;
-    flex-direction: row-reverse;
-  
-    align-items:flex-start;
- }
-
-header{
- 
-    padding: 50px;
-
-    height: auto;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    /*padding: 50px*/
+    height: 200px;
     background-image: url('./public/image/mesh.png');
     background-size: cover;
     background-repeat: no-repeat;
 
+    
     @media screen and (min-width: 992px) {
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         justify-content: space-between;
-        padding: 0 1em;
-      
+        margin-left: 10px;
+        margin-right: 3px;
+      } 
     }
- }
+
 
 
 #Monbouton {
-     display: flex;
-   
-    
+
+    display: flex;
     color:rgb(34, 34, 128);
     opacity: 85%;
     border-radius: 30px;
     border:none;
     padding: 18px 20px;
-    
     text-align: center;
     font-size: 19px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ;
     font-family: "Lexend Giga", sans-serif;
-    position:sticky; 
+    position: right; 
 
     
-  
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
+        display: flex;
         flex-direction: row;
-        padding-right: 0%;
+        width: 10px;
+        justify-content: flex-end;
+        margin-left: 10px;
+        margin-right: 3px;
+      }
 
-    }
+   
 }
 
 button:hover {
@@ -87,13 +90,7 @@ h1 {
     animation: zoomOut 5s ease-in-out forwards;
     opacity:0,5;
 
-    @media screen and (min-width: 768px) {
-        width: 5em;
-        font-size: 1.8em;
-        display: flex;
-        flex-direction: row;
-        
-    }
+   
 }  
     @keyframes zoomOut {
         from {
@@ -112,12 +109,18 @@ h1 {
     padding: 10px;
     width: 270px;
     height: 270px;
-    position:absolute;
+    position: left;
     top: 0px;
     left:0px;
 
-      @media screen and (min-width: 768px) {
-
+   
+    @media screen and (min-width: 992px) {
+        display: flex;
+        flex-direction: row;
+        width: 10px;
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-right: 0 1em;
       }
 
     }
@@ -143,27 +146,28 @@ footer {
     text-align: center;
 
 
-       @media screen and (min-width: 768px) {
-
-       }
+    @media screen and (min-width: 992px) {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100px;
+        justify-content: flex-start;
+        margin-left: 10px;
+        margin-right: 0 1em;
+      }
 }
 /* ﻿
 Comme une envie de crever
 Juli976e T.
 julie_7 */
 
-.social-icons , li , a{
+.social-icons , li , a {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 12px;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: row-reverse;
-
-
-    }
+  
 }
 .pff{
    
