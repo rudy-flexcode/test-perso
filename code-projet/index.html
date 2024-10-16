@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
-        <kink rel ="stylesheet" href="style2.css"/>
+      
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="styles.css"/>
         <link rel="stylesheet" href="style2.css"/>
-        <link rel="stylesheet" href="responcive.css"/>
+        <link rel="stylesheet" href="responsive.css"/>
         
             <title>Book Wilders</title>
     
-        <script src="index.js" defer></script>
+        <script src="indexrudy.js" defer></script>
         <script src="script.js" defer></script>
         
       
@@ -25,7 +25,7 @@
     
          
               <img src="Logo Tech Informatique Simple Moderne Professionnel Noir et Blanc (1).png" alt="logo CV" id="logo"/>
-              <button id="Monbouton"> Contactez nous ! </button>  
+              <button href="contact" id="Monbouton"> Contactez nous ! </button>  
               <script src="index2.js"></script> 
               <h1>BOOK WILDERS </h1>
            </div>
@@ -33,29 +33,19 @@
 
     <main>
 
-         <div id="carousel">
-
-            <a href="#container camille">
+        <div id="carousel">
             <img src="photos/camille.jpg" id="carousel-image-0" class="carousel-image" >
-            </a>
-
-            <a href="#container-julie">
+           
             <img src="photos/IMG_20240923_165453.jpg" id="carousel-image-1" class="carousel-image">
-            </a>
-
-            <a href="#container-frank">
+           
             <img src="photos/Sena.JPG" id="carousel-image-2" class="carousel-image">
-            </a>
-
-            <a href="#container-rudy">
             <img src="photos/rudy.png" id="carousel-image-3" class="carousel-image">
-            </a>
-
             <img src="photos/images.png" id="carousel-image-4" class="carousel-image">
-
-            <img src="Logo Tech Informatique Simple Moderne Professionnel Noir et Blanc (1).png" id="carousel-image-5" class="carousel-image">
+            <img src="public/image/Logo_Tech_Informatique_Simple_Moderne_Professionnel_Noir_et_Blanc_1.png" id="carousel-image-5" class="carousel-image">
+      
         </div>
         
+
 
         <section id="container-rudy" class = "container">
              <div class = "CartePrez">
@@ -83,7 +73,7 @@
            </div>
            <div class = Objectifs>
                 <h3>Objectifs</h3>
-                <p>"Devenir développeuse!"</p>
+                <p>"Devenir une développeuse !"</p>
            </div>
         </section>
        
@@ -119,22 +109,22 @@
     </main>
 
 
-        <section class = "containerform">
+        <section id="contact" class = "containerform">
  
              <div class="container_contact">
                 <button class="showForm">Camille</button><br>
                 <button class="showForm">Julie</button><br>
                 <button class="showForm">Rudy</button><br>
-                <button class="showForm">Frank Sena</button><br>
+                <button class="showForm" id="last_button" >Frank Sena</button><br>
             </div>
      
             <div>
                 <form method="Get" action="" id="contactForm">
-                <label for="name">Nom</label><br>
+                <label for="name" class="my_label">Nom</label><br>
                 <input type="text" name="name" id="name"><br>    
-                <label for="email">Email</label><br>
+                <label for="email" class="my_label">Email</label><br>
                 <input type="email" placeholder="ex:luke@yahoo.com"> <br>
-                <label for="message">Message</label><br>
+                <label for="message" class="my_label">Message</label><br>
                 <textarea name="message" id="message"></textarea><br>
                 <button id="submit" type="submit">Envoyer</button>
                 </form>
@@ -142,32 +132,7 @@
     
         </section>
 
-<!-- Partie formulaire essai camille -->
-
-
-
-
-<!-- <section class="form-container">
-    <form action="#" method="POST">
-        <div class="input-group">
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" placeholder="Renseignez votre nom">
-        </div>
-
-        <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="adresse e-mail ">
-        </div>
-
-        <div class="input-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Renseignez votre message"></textarea>
-        </div>
-
-        <button type="submit">Envoyer </button>
-    </form>
-</section> --> 
-
+<!-- Partie caroussel essai camille -->
 
 
 </main> 
@@ -178,10 +143,11 @@
     <span>Made with &#x1F499; by Wilders 2024</span>
     <nav>
         <ul class="social-icons">
-            <li><a href="https://www.instagram.com"></a> <img src="/code-projet/public/image/logo insta en pgn.png" alt="insta" class="pff"></li>
-            <li><a href="https://www.github.com"></a> <img src="./public/image/github.png" alt="github" class="pff"></li>
-            <li><a href= "https://www.linkedin.com"></a><img src="./public/image/linkedin.png" alt="linkedin"class="pff"></li>
-            <li><a href= "https://x.com/"></a><img src="./public/image/twitter.png" alt="X"class="pff"></li>
+          
+            <li><a href="https://www.instagram.com"> <img src="./public/image/logo insta en pgn.png" alt="insta" class="pff"></a></li>
+            <li><a href="https://www.github.com"> <img src="./public/image/github.png" alt="github" class="pff"></a></li>
+            <li><a href= "https://www.linkedin.com"><img src="./public/image/linkedin.png" alt="linkedin"class="pff"></a></li>
+            <li><a href= "https://x.com"><img src="./public/image/twitter.png" alt="X"class="pff"></a></li>
             
         </ul>
     </nav>

@@ -1,3 +1,7 @@
+
+
+
+// Class that manage the carousel
 class Carousel {
 
     // Constructor, initialise the carousel
@@ -8,26 +12,15 @@ class Carousel {
         // Get image elements
         this.img = [];
         this.img[0] = document.getElementById("carousel-image-0");
-        
         this.img[1] = document.getElementById("carousel-image-1");
         this.img[2] = document.getElementById("carousel-image-2");
         this.img[3] = document.getElementById("carousel-image-3");
         this.img[4] = document.getElementById("carousel-image-4");
         this.img[5] = document.getElementById("carousel-image-5");
 
-        
-
-
-
-       
-
         // Set animation key frames forward and backward
-        this.animForward  = [ 'mv1to0', 'mv2to1', 'mv3to2', 'mv4to3', 'mv5to4'];
-        this.animBackward = ['mv0to1', 'mv1to2', 'mv2to3', 'mv3to4', 'mv4to5' ];
-       
-        
-
-
+        this.animForward  = ['mv0to5', 'mv1to0', 'mv2to1', 'mv3to2', 'mv4to3', 'mv5to4'];
+        this.animBackward = ['mv0to1', 'mv1to2', 'mv2to3', 'mv3to4', 'mv4to5', 'mv5to0'];
 
         // Reset carousel 
         this.reset();
@@ -35,29 +28,23 @@ class Carousel {
 
 
 
-    
-
-    
-        
-
-
     // Set a new image (src) to image at given position (pos)
     // 0 first image on the left
     // 2 middle image
     // 4 last image
     // 5 hidden image
-    // setImage(pos, src) {
-    //     this.img[(pos+this.currentImage+4)%6].src = src;
-    // }
+    setImage(pos, src) {
+        this.img[(pos+this.currentImage+4)%6].src = src;
+    }
 
     // Hide an image at given position (pos)
     // 0 first image on the left
     // 2 middle image
     // 4 last image
     // 5 hidden image
-    // hideImage(pos) {
-    //     this.img[(pos+this.currentImage+4)%6].style.visibility = 'hidden';
-    // }
+    hideImage(pos) {
+        this.img[(pos+this.currentImage+4)%6].style.visibility = 'hidden';
+    }
 
     // Show an image at given position (pos)
     // 0 first image on the left
@@ -87,7 +74,7 @@ class Carousel {
     next(nextImage) {
         
         // Set new image if requested
-        if (nextImage !== undefined) this.setImage( 8 , nextImage );
+        if (nextImage !== undefined) this.setImage( 5 , nextImage );
 
         //  Animate    
         this.img.forEach((image, i) => {    
@@ -138,7 +125,7 @@ let carousel = new Carousel();
 
 
 // Left click
-document.addEventListener('click', (event) => {
+document.addEventListener('mousedown', (event) => {
 	switch (event.which) {
 			//case 1: carousel.next('/dev/images/img' + Math.floor(Math.random() * 7) + '.png'); break;
 		case 1: carousel.showImage(5); carousel.next(); break;
@@ -150,6 +137,8 @@ document.addEventListener('click', (event) => {
 })
 
 // Right click
-// document.addEventListener('contextmenu', (event) => {
-// 	event.preventDefault();
-// })
+document.addEventListener('contextmenu', (event) => {
+	event.preventDefault();
+})
+
+

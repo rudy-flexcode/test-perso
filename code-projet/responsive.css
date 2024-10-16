@@ -1,33 +1,211 @@
 
-@media screen and (min-width: 100px) {
 
-    body{
-        background-color: brown;
+
+  @media screen and (max-width: 768px) {
+    *{margin: 0;}
+
+    .contenu {
+        background-color: none;
+        padding: 1rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        
+
+     }
+    
+     main {
+        margin-left: 0px;
+       
+     }
+    header{
+    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        height: 250px;
+        background-image: url('./public/image/mesh.png');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    #carousel  {
-        width: 100%;
-        max-width: 150vw;
-        height: 30vh;
+
+    #Monbouton {
+    
+        display: flex;
         position: absolute;
-        top: 50%;
+        color:rgb(34, 48, 128);
+        opacity: 85%;
+        border-radius: 30px;
+        border: none;
+        padding: 5px 7px;
+        text-align: center;
+        font-size: 9px;
+        cursor: pointer;
+        margin-top: -85px;
+        transition: background-color 0.3s, transform 0.2s;
+        font-family: "Lexend Giga", sans-serif;
+        right: 2px;
+       
+    }
+    
+    button:hover {
+        background-color: #ffffff;
+    }
+    button:active  {
+        transform: scale(0.95);
+    }
+    
+    h1 {
+    
+    
+        background-color: none;
+        color: #ffffff;
+        font-family: "Lexend Giga", sans-serif;
+        text-align: center;
+        font-size: 30px;
+        animation: zoomOut 5s ease-in-out forwards;
+        opacity:0,5;
+        margin-right: 60px;
+    
+       
+    }  
+        @keyframes zoomOut {
+            from {
+              transform: scale(2); 
+              opacity: 0.5; 
+            }
+            to {
+              transform: scale(1); 
+              opacity: 1; 
+            }
+          }
+    
+    
+    #logo {
+        
+        margin-top: -85px;
+        border-radius: 80%;
+        padding: 0.5 0.5em;
+        width: 50px;
+        height: 50px;
+        left: 0%;
+        position: absolute;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        place-items: center; 
+        min-height: 100vh; 
+        /* ajout rudy */
+        margin-top: 500px;
+        margin-right: 50px;
+        margin-left: 20px;
+       
+    
+    }
+
+
+
+    .container {
+  
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(250, 243, 254);
+        align-items: center;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        box-shadow: 0px 1px 19px rgba(83, 36, 88, 0.7);
+        border-radius: 2%;
+          
+      
+        
+    
+       display: flex;
+              flex-direction: column;
+              width: 80%; 
+          
+            
+      
+      }
+      
+    
+    
+    
+    footer {
+    
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        height: 80px;
+        background-image: url('./public/image/mesh.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+    }
+    
+    .social-icons, li, a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 7px;
+    
+      
+    }
+    .pff {
+       
+        width: 25px;
+        border-radius: 15%;
+     
+        
+    }
+    
+    .last_button {
+      margin-right: 10px;
+    }
+
+    .container_contact {
+      gap: 10px;
+    }
+    
+    .containerform {
+       margin:auto;
+ 
+    }
+
+       
+    
+    #carousel  {
+       
+        width: 100%;
+        
+        max-width:180vw;
+        height: 70vh;
+        position:absolute;
+    
         transform: translateY(-50%);
-        overflow: hidden;
+ 
     }
     
     
     
     .carousel-image  {
         height: 50vh;
-        max-height: 150px;
+        max-height: 120px;
         position: absolute;
-        left: 50%;
-        border-radius: 7%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px px 1px;
+      
+        border-radius: 20%;
+        box-shadow: rgba(0, 0, 0, 0.35) 15px 8px 9px;
     
     }
     
+   
+  
+    
 }
-    
-    
-    
