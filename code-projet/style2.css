@@ -21,7 +21,7 @@ header{
     background-repeat: no-repeat;
     }
 
-#Monbouton {
+#Monbouton, .merde {
 
     display: flex;
     position: absolute;
@@ -33,11 +33,11 @@ header{
     text-align: center;
     font-size: 19px;
     cursor: pointer;
-    margin-top: -95px;
+    margin-top: -50px;
     margin-right: 30px;
     transition: background-color 0.3s, transform 0.2s ;
     font-family: "Lexend Giga", sans-serif;
-    right: 0px;
+    right: -20px;
 
    
 }
@@ -81,8 +81,8 @@ h1 {
     opacity: 90%;
     padding: 0.5 0.5em;
     margin-left: 20px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     left: 10px;
     position: absolute;
     
