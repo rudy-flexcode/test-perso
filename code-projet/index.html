@@ -25,7 +25,7 @@
     
          
               <img src="Logo Tech Informatique Simple Moderne Professionnel Noir et Blanc (1).png" alt="logo CV" id="logo"/>
-              <button href="contact" id="Monbouton"> Contactez nous ! </button>  
+              <a href="#contact" class="merde">  <button  id="Monbouton"> Contactez nous ! </button>    </a>
               <script src="index2.js"></script> 
               <h1>BOOK WILDERS </h1>
            </div>
@@ -58,7 +58,7 @@
             </div>
             <div id=" objectifs" class = Objectifs>
                  <h3>Objectifs</h3>
-                 <p>"Devenir développeur web dans une entreprise a la réunion et pourquoi pas freelance par la suite."</p>
+                 <p>"Devenir développeur web dans une entreprise à la réunion et pourquoi pas freelance par la suite."</p>
             </div>
         </section>
          
@@ -84,11 +84,11 @@
            </div>
            <div class="Resume">
                <h3>Resume</h3>
-               <p>"A la suite de ma formation, je compte faire une alternance. Après mon alternance, j'aimerais bien travailler dans une entreprise . Et finalement, je souhaite ouvrir ma propre boîte."</p>
+               <p>"A la suite de ma formation, je compte faire une alternance, pour me permettre d'avoir des bases solides. Pour finir je souhaite ouvrir mon entreprise."</p>
            </div>
            <div class = Objectifs>
                 <h3>Objectifs</h3>
-                <p>"Mon objectif c'est de devenir un développeur web"</p>
+                <p>"Mon objectif est de devenir un développeur web"</p>
            </div>
         </section>
     
@@ -107,35 +107,72 @@
            </div>
         </section>
     </main>
+  
 
 
-        <section id="contact" class = "containerform">
+        <!-- <section id="contact" class = "containerform">
  
              <div class="container_contact">
                 <button class="showForm">Camille</button><br>
                 <button class="showForm">Julie</button><br>
                 <button class="showForm">Rudy</button><br>
-                <button class="showForm" id="last_button" >Frank Sena</button><br>
+                <button class="showForm" id="last_button">Frank Sena</button><br>
             </div>
      
             <div>
                 <form method="Get" action="" id="contactForm">
                 <label for="name" class="my_label">Nom</label><br>
-                <input type="text" name="name" id="name"><br>    
+                <input type="text" name="name" id="name"><br>  
+
                 <label for="email" class="my_label">Email</label><br>
-                <input type="email" placeholder="ex:luke@yahoo.com"> <br>
+                <input type="email" name="email" id="email" placeholder="ex: bob@yahoo.com"><br>
+
                 <label for="message" class="my_label">Message</label><br>
                 <textarea name="message" id="message"></textarea><br>
+                
                 <button id="submit" type="submit">Envoyer</button>
                 </form>
             </div>
     
-        </section>
+        </section> -->
 
-<!-- Partie caroussel essai camille -->
+<!-- Partie FORMULAIRE  essai camille -->
+
+<section id="contact-form">
+    <h2>VOTRE MESSAGE</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="destinataire">Choisir le destinataire</label>
+            <select name="destinataire" id="destinataire">
+                <option value="personne1">Personne 1</option>
+                <option value="personne2">Personne 2</option>
+                <option value="personne3">Personne 3</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Votre email</label>
+            <input type="email" name="email" id="email" placeholder="Votre email">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Votre message"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+</section>
 
 
-</main> 
+
+
+
+
+
+ 
 
 
 <footer><strong>
@@ -147,7 +184,7 @@
             <li><a href="https://www.instagram.com"> <img src="./public/image/logo insta en pgn.png" alt="insta" class="pff"></a></li>
             <li><a href="https://www.github.com"> <img src="./public/image/github.png" alt="github" class="pff"></a></li>
             <li><a href= "https://www.linkedin.com"><img src="./public/image/linkedin.png" alt="linkedin"class="pff"></a></li>
-            <li><a href= "https://x.com"><img src="./public/image/twitter.png" alt="X"class="pff"></a></li>
+            <li><a href= "https://x.com"><img src="./public/image/x.png" alt="X"class="pff"></a></li>
             
         </ul>
     </nav>
