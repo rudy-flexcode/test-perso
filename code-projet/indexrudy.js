@@ -1,6 +1,4 @@
 
-
-
 // Class that manage the carousel
 class Carousel {
 
@@ -125,7 +123,7 @@ let carousel = new Carousel();
 
 
 // Left click
-document.addEventListener('mousedown', (event) => {
+document.addEventListener('click', (event) => {
 	switch (event.which) {
 			//case 1: carousel.next('/dev/images/img' + Math.floor(Math.random() * 7) + '.png'); break;
 		case 1: carousel.showImage(5); carousel.next(); break;
